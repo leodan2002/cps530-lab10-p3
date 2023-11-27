@@ -18,7 +18,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1 className='title-page'>Lab 10 - Problem 3</h1>
+      <h1 className='title-page'>Lab 10 - Problem 3: Working With ReactJS</h1>
       <h2>How to Install the Framework and Build the Page</h2>
       <Step 
         stepImage = {Step1}
