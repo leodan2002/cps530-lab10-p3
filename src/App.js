@@ -1,23 +1,78 @@
-import logo from './logo.svg';
+import Step from './components/Step';
+import Step1 from './images/image1.png';
+import Step2 from './images/image2.png';
+import Step3 from './images/image3.png';
+import Step4 from './images/image4.png';
+import Step5 from './images/image5.png';
+import Step6 from './images/image6.png';
+import Step7 from './images/image7.png';
+
+
+import Challenge from './components/Challenge';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className='title-page'>Lab 10 - Problem 3</h1>
+      <h2>How to Install the Framework and Build the Page</h2>
+      <Step 
+        stepImage = {Step1}
+        stepHeading = "Step 1:"
+        stepDescription = "Download Node JS."
+      />
+      <Step 
+        stepImage = {Step2}
+        stepHeading = "Step 2:"
+        stepDescription = "After downloading Node JS, check to see if it is in the PC."
+      />
+      <Step 
+        stepImage = {Step3}
+        stepHeading = "Step 3:"
+        stepDescription = "Set up a new React project using the following command: npx create-react-app lab10c"
+      />
+      <Step 
+        stepImage = {Step4}
+        stepHeading = "Step 4:"
+        stepDescription = "Start the development server in the newly created project folder with the following command: npm start. The React project is now running on a localhost server."
+      />
+      <Step 
+        stepImage = {Step5}
+        stepHeading = "Step 5:"
+        stepDescription = "Design the web page and implement the components."
+      />
+      <Step 
+        stepImage = {Step6}
+        stepHeading = "Step 6:"
+        stepDescription = "Add the components to the page, which is in App.js."
+      />
+      <Step 
+        stepImage = {Step7}
+        stepHeading = "Step 7:"
+        stepDescription = "Add the styles to the CSS files."
+      />
+      <Step 
+        stepImage = {Step5}
+        stepHeading = "Step 8:"
+        stepDescription = "Deploy the React app to production through Netlify."
+      />
+      <h2>The Diffculties Encountered and How to Solve Them</h2>
+      <Challenge
+        challengeHeading = "Challenge 1:"
+        challengeDescription = "Learing React JS as a beginner."
+        challengeSolution = "Reading documentations and watching online Tutorials."
+      />
+      <Challenge
+        challengeHeading = "Challenge 2:"
+        challengeDescription = "How to design the Web Page with React JS."
+        challengeSolution = "Working with React apps is similar to building Lego pieces, because we can create components and build the app with them. Thus, knowing how to devide the web page into components is important when working with React."
+      />
+      <Challenge
+        challengeHeading = "Challenge 3:"
+        challengeDescription = "How to deploy the site."
+        challengeSolution = "Netlify is a platform that helps deploying React apps with simple steps."
+      />
     </div>
   );
 }
