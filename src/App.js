@@ -6,6 +6,9 @@ import Step4 from './images/image4.png';
 import Step5 from './images/image5.png';
 import Step6 from './images/image6.png';
 import Step7 from './images/image7.png';
+import Step8 from './images/image8.png';
+import Step9 from './images/image9.png';
+
 
 
 import Challenge from './components/Challenge';
@@ -53,15 +56,20 @@ function App() {
         stepDescription = "Add the styles to the CSS files."
       />
       <Step 
-        stepImage = {Step5}
+        stepImage = {Step8}
         stepHeading = "Step 8:"
-        stepDescription = "Deploy the React app to production through Netlify."
+        stepDescription = "Push the React app to Github."
+      />
+      <Step 
+        stepImage = {Step9}
+        stepHeading = "Step 9:"
+        stepDescription = "Deploy the React app with Netlify through Github."
       />
       <h2>The Diffculties Encountered and How to Solve Them</h2>
       <Challenge
         challengeHeading = "Challenge 1:"
         challengeDescription = "Learing React JS as a beginner."
-        challengeSolution = "Reading documentations and watching online Tutorials."
+        challengeSolution = "Reading documentations and watching online tutorials about React JS."
       />
       <Challenge
         challengeHeading = "Challenge 2:"
@@ -72,6 +80,11 @@ function App() {
         challengeHeading = "Challenge 3:"
         challengeDescription = "How to deploy the site."
         challengeSolution = "Netlify is a platform that helps deploying React apps with simple steps."
+      />
+      <Challenge
+        challengeHeading = "Challenge 4:"
+        challengeDescription = "Learning Github as a beginner."
+        challengeSolution = "Reading documentations and watching online tutorials about Github."
       />
     </div>
   );
